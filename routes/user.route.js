@@ -1,17 +1,13 @@
 import express from 'express'
-const app = express();
+import User from '../models/user.model.js'
+import bcrypt from 'bcryptjs'
+import jwt from 'jsonwebtoken';
+import { loginUser, registerUser, showLogin, showRegister } from '../controllers/user.controller.js';
 const router = express.Router();
-router.get('/test',(req,res)=>{
- res.send('user route');
-})
-router.get('/register',(req,res)=>{
- res.render('register')
-})
-router.post('/register',(req,res)=>{
- const data = req.body
- console.log(data);
- res.send('done')
- 
-})
+
+router.get('/register',showRegister)
+router.post('/register', registerUser)
+router.get('/login',showLogin)
+router.post('/login', loginUser);
 
 export default router;
