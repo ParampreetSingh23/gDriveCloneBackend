@@ -1,0 +1,1 @@
+{"fieldname":"file","originalname":"img-taiwan.webp","encoding":"7bit","mimetype":"image/webp","path":"https://res.cloudinary.com/datqxmild/image/upload/v1760634545/Drive-Backend/vqnfxzihd9hlbybuthak.webp","size":14452,"filename":"Drive-Backend/vqnfxzihd9hlbybuthak"}
